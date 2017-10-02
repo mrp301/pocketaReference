@@ -1,9 +1,31 @@
-//#0009_定数定義
+//#0010_例外処理
 
-const a=1; //定数は値が固定され代入などを行なっても変化しない。
-var b=2;
-var c=3;
-var d=b+c;
-// a=b+c; aは定数なので変化しない。エラーになる。
-document.write("a=" +a+ "<br>");
-document.write("d=" +d+ "<br>");
+try{
+  WINDOWS("VISTA?");
+}catch(e){ //エラーの内容はeに格納される
+  alert("エラーは" +e+ "です。");
+}finally{ //エラーが発生した際に必ず処理される
+  alert("エラーが発生した際、ついでに呼び出されます。");
+}
+
+var a=1;
+var b=eval(prompt("数字を入れてください",0));
+try{
+  if(b==0){
+    throw "zero"; //throwを使うことでエラーじゃなくてもエラーにできる。throwの値がeに格納される。
+  }
+  if(b<0){
+    "minus";
+  }
+}catch(e){
+  if(e=="zero"){
+    alert("ゼロは除算できません");
+    b=1;
+  }
+  if(e=="minus"){
+    alert("マイナスの除算もできません");
+    b=Math.abs(b); //絶対値を返す
+  }
+}
+
+document.write("a/b=" +a/b);

@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>#0011_エラーオブジェクト</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+  </head>
+  <body>
+    <div class="contents-box">
+      <header>
+        <h1 class="title">#0010_例外処理</h1>
+      </hrader>
+      <ul class="index">
+        <li class="index-list">Error:エラーオブジェクト</li>
+        <li class="index-list">EvalError:エラーオブジェクト</li>
+        <li class="index-list">RangeError:エラーオブジェクト</li>
+        <li class="index-list">RefetrnceError:エラーオブジェクト</li>
+        <li class="index-list">SyntaxError:エラーオブジェクト</li>
+        <li class="index-list">TypeError:エラーオブジェクト</li>
+        <li class="index-list">URIError:エラーオブジェクト</li>
+      </ul>
+      <p class="sample-heading"><span class="sample-heading-text">サンプル</span></p>
+      <div class="sample-box">
+        <form>
+          <input type="button" value="Error" onclick="miss(err1)">
+          <input type="button" value="EvalError" onclick="miss(err2)">
+          <input type="button" value="RangeError" onclick="miss(err3)">
+          <input type="button" value="ReferenceError" onclick="miss(err4)">
+          <input type="button" value="SyntaxError" onclick="miss(err5)">
+          <input type="button" value="TypeError" onclick="miss(err6)">
+          <input type="button" value="URIError" onclick="miss(err7)">
+        </form>
+        <div id="result"></div>
+        <script src='errorObject.js'></script>
+      </div>
+      <footer class="footer">
+        <small>©︎ 2017 hishinuma</small>
+      </footer>
+    </div>
+  </body>
+</html>

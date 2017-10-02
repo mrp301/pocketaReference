@@ -5,6 +5,7 @@ body,h1,h2,h3,p {
 
 body {
   background-color: #f5f4eb;
+  height: 100%;
 }
 
 .contents-box {
@@ -12,7 +13,7 @@ body {
   height: 100%;
   position: relative;
   margin: 0 auto;
-  padding-bottom: 30px;
+  padding-bottom: 41px;
 }
 
 .title {

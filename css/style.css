@@ -9,7 +9,10 @@ body {
 
 .contents-box {
   width: 960px;
+  height: 100%;
+  position: relative;
   margin: 0 auto;
+  padding-bottom: 30px;
 }
 
 .title {
@@ -82,7 +85,11 @@ body {
 }
 
 .footer {
+  position: absolute;
+  width: 100%;
+  padding: 10px 0;
+  bottom: 0;
   color: #fff;
-  background-color: #000;
+  background-color: #442f29;
   text-align: center;
 }

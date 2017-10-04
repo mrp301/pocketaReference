@@ -16,7 +16,7 @@ for(i=0; i<9; i++){
 
 for(i=0; i<9; i++){
   document.write('c:');
-  jump://jumpとは一体？
+  jump://jum(label)とは一体？
   for(var j=0; j<10; j++){
     if(i==2) break jump;
       document.write((i*10+j)+',');

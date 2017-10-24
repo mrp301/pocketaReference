@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>#0015_ジェネレータ</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+  </head>
+  <body>
+    <div class="contents-box">
+      <header>
+        <h1 class="title">#0015_ジェネレータ</h1>
+      </hrader>
+      <ul class="index">
+        <li class="index-list">close:ジェネレータ終了</li>
+        <li class="index-list">next:次に処理を進める</li>
+        <li class="index-list">send:ジェレレータにデータを送信</li>
+        <li class="index-list">yield:一時的に処理を停止</li>
+      </ul>
+      <p class="sample-heading"><span class="sample-heading-text">サンプル</span></p>
+      <img src="" id="myChar" class="myChar">
+      <form>
+        <input type="button" value="移動" onclick="mc.next()">
+        <input type="button" value="リスタート" onclick="mc.send(true)">
+        <input type="button" value="終了" onclick="mc.close()">
+      </form>
+      <script src="generator.js"></script>
+      <footer class="footer">
+        <small>©︎ 2017 hishinuma</small>
+      </footer>
+
+    </div>
+  </body>
+</html>

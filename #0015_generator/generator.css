@@ -1,0 +1,13 @@
+.char-box {
+  position: relative;
+  width: 960px;
+  height: 250px;
+  border-bottom: solid 1px #000;
+}
+
+.myChar {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  left: 0px;
+}

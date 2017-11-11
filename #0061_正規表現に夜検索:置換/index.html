@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>#0061_正規表現による検索/置換</title>
+    <link rel="stylesheet" type="text/css" href="../css/style-section2.css">
+  </head>
+  <body>
+    <div class="contents-box">
+      <header>
+        <h1 class="title">#0061_正規表現による検索/置換</h1>
+      </header>
+      <ul class="index">
+        <li class="index-list">match:検索</li>
+        <li class="index-list">replace:置換</li>
+        <li class="index-list">search:検索</li>
+      </ul>
+      <div class="sample-box">
+        <form>
+          検索される文字列：<input type="text" id="targetText" value="ABCAB"><br>
+          置換文字列：<input type="text" id="replaceText" value="QA"><br>
+          <input type="button" value="ABCにマッチしているか検索" onclick="Xmatch()"><br>
+          <input type="button" value="ABCかabcにマッチしたら置換" onclick="Xreplace()"><br>
+        </form>
+        <div id="result"></div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+    <footer class="footer">
+      <small>©︎ 2017 hishinuma</small>
+    </footer>
+  </body>
+</html>

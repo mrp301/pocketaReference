@@ -3,21 +3,23 @@ body,h1,h2,h3,p {
   padding: 0;
 }
 
+body {
+}
+
 html {
   height: 100%;
+  position: relative;
 }
 
 body {
-  background-color: #eeeff5;
   height: 100%;
+  background-color: #eeeff5;
 }
 
 .contents-box {
   width: 960px;
-  height: 100%;
-  position: relative;
+  min-height: 100%;
   margin: 0 auto;
-  padding-bottom: 41px;
 }
 
 .title {
@@ -89,11 +91,15 @@ body {
   padding: 20px;
 }
 
+.content-inside{
+  margin-bottom: 40px;
+}
+
 .footer {
-  position: absolute;
   width: 100%;
-  padding: 10px 0;
-  bottom: 0;
+  margin-top: -40px;
+  height: 40px;
+  line-height: 40px;
   color: #fff;
   background-color: #272633;
   text-align: center;

@@ -1,4 +1,4 @@
-//#0073
+//#0073　
 
 var ele = document.getElementById("result");
 var myDate = new Date();

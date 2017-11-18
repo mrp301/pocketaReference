@@ -1,9 +1,8 @@
-//#0073　
+//#0074
 
 var ele = document.getElementById("result");
 var myDate = new Date();
-var h = myDate.getUTCHours();
-var m = myDate.getUTCMinutes();
-var s = myDate.getUTCSeconds();
-var msec = myDate.getUTCMilliseconds();
-ele.innerHTML = h+ "時" +m+ "分" +s+ "." +msec+ "秒";
+ele.innerHTML = "getTime = " +myDate.getTime() +"<br>";
+ele.innerHTML += "getTimezoneOffset = " +myDate.getTimezoneOffset() +"<br>";
+ele.innerHTML += "parse = " +Date.parse('2000/2/29') +"<br>"; //1970.1.1から2000.2.29までのミリ秒を返す
+ele.innerHTML += "now = " +Date.now();

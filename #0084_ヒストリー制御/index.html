@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>#0084_ヒストリー制御</title>
+    <link rel="stylesheet" type="text/css" href="../css/style-section2.css">
+  </head>
+  <body>
+    <div class="contents-box">
+      <div class="content-inside">
+        <header>
+          <h1 class="title">#0084_ヒストリー制御</h1>
+        </header>
+        <ul class="index">
+          <li class="index-list">back:1つ前のページへ</li>
+          <li class="index-list">forward:1つ先のページへ</li>
+          <li class="index-list">go:指定数ページを進める</li>
+        </ul>
+        <div class="sample-box">
+          <input type="button" value="前へ" onclick="history.back()">
+          <input type="button" value="次へ" onclick="history.forward()">
+          <input type="button" value="3つ前へ" onclick="history.go(-3)">
+          <div id="result"></div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+    <footer class="footer">
+      <small>©︎ 2017 hishinuma</small>
+    </footer>
+  </body>
+</html>

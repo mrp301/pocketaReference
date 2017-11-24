@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>#0092_移動/サイズ変更</title>
+    <link rel="stylesheet" type="text/css" href="../css/style-section2.css">
+  </head>
+  <body>
+    <div class="contents-box">
+      <div class="content-inside">
+        <header>
+          <h1 class="title">#0092_移動/サイズ変更</h1>
+        </header>
+        <ul class="index">
+          <li class="index-list">moveBy:相対的に移動</li>
+          <li class="index-list">moveTo:指定座標に移動</li>
+          <li class="index-list">resizeBy:相対的にサイズ移動</li>
+          <li class="index-list">resizeTo:指定サイズに変更</li>
+        </ul>
+        <div class="sample-box">
+          <form>
+            左右：<input type="text" size="4" value="10" name="X"><br>
+            上下：<input type="text" size="4" value="20" name="Y"><br>
+            <input type="button" value="moveBy" onclick="mvBY(this.form.X,this.form.Y)">
+            <input type="button" value="moveTo" onclick="mvTO(this.form.X,this.form.Y)">
+            <input type="button" value="resizeBy" onclick="rsBY(this.form.X,this.form.Y)">
+            <input type="button" value="resizeTo" onclick="rsTO(this.form.X,this.form.Y)">
+          </form>
+          <div id="result"></div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+    <footer class="footer">
+      <small>©︎ 2017 hishinuma</small>
+    </footer>
+  </body>
+</html>

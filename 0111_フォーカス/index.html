@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../css/style-section2.css">
+  </head>
+  <body>
+    <div class="contents-box">
+      <div class="content-inside">
+        <header>
+          <h1 class="title" id="js-title"></h1>
+        </header>
+        <ul class="index">
+          <li class="index-list">blur:フォーカスを外す</li>
+          <li class="index-list">focus:フォーカスを合わせる</li>
+        </ul>
+        <div class="sample-box">
+          <form>
+            A:<input type="text" name="eleA" value="A"><br>
+            B:<input type="text" name="eleB" value="B"><br>
+            <input type="button" value="Aヘフォーカス" onclick="jsFocus(this.form.eleA)">
+            <input type="button" value="Bヘフォーカス" onclick="jsFocus(this.form.eleB)">
+            <input type="button" value="Aのフォーカス離す" onclick="jsBlue(this.form.eleA)">
+            <input type="button" value="Bのフォーカス離す" onclick="jsBlue(this.form.eleB)"> 
+          </form>
+          <div id="result"></div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/file-name.js"></script>
+    <script src="index.js"></script>
+    <footer class="footer">
+      <small>©︎ 2017 hishinuma</small>
+    </footer>
+  </body>
+</html>

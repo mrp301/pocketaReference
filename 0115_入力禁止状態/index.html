@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../css/style-section2.css">
+  </head>
+  <body>
+    <div class="contents-box">
+      <div class="content-inside">
+        <header>
+          <h1 class="title" id="js-title"></h1>
+        </header>
+        <ul class="index">
+          <li class="index-list">disabled:禁止状態</li>
+        </ul>
+        <div class="sample-box">
+          <form>
+            <input type="text" name="TF"><br>
+            <input type="button" value="入力禁止" onclick="this.form.TF.disabled = true">
+            <input type="button" value="入力許可" onclick="this.form.TF.disabled = false">
+            <input type="button" value="入力切替" onclick="this.form.TF.disabled = !this.form.TF.disabled">
+          </form>
+          <div id="result"></div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/file-name.js"></script>
+    <script src="index.js"></script>
+    <footer class="footer">
+      <small>©︎ 2017 hishinuma</small>
+    </footer>
+  </body>
+</html>

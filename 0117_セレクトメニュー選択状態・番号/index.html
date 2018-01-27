@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../css/style-section2.css">
+  </head>
+  <body>
+    <div class="contents-box">
+      <div class="content-inside">
+        <header>
+          <h1 class="title" id="js-title"></h1>
+        </header>
+        <ul class="index">
+          <li class="index-list">index:参照番号</li>
+          <li class="index-list">selected:選択状態</li>
+          <li class="index-list">selectedIndex:選択番号</li>
+        </ul>
+        <div class="sample-box">
+          <form method="post" enctype="text/plain">
+            <select onchange="check(this,this.form.result)">
+              <option value="項目1">項目1</option>
+              <option value="項目2">項目2</option>
+              <option value="項目3">項目3</option>
+              <option value="項目4" selected>項目4</option>
+            </select>
+            <br>
+            <textarea cols="40" rows="10" name="result"></textarea>
+          </form>
+          <div id="result"></div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/file-name.js"></script>
+    <script src="index.js"></script>
+    <footer class="footer">
+      <small>©︎ 2017 hishinuma</small>
+    </footer>
+  </body>
+</html>

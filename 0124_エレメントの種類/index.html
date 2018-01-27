@@ -11,16 +11,20 @@
           <h1 class="title" id="js-title"></h1>
         </header>
         <ul class="index">
-          <li class="index-list">text:選択項目</li>
+          <li class="index-list">type:エレメントの種類</li>
         </ul>
         <div class="sample-box">
-          <form name="myForm">
-            <select name="mySelect">
+          <form>
+            <select name="mySelect1">
               <option>項目1</option>
               <option>項目2</option>
-              <option>項目3</option>
             </select>
-            <input type="button" value="項目文字を表示" onclick="check()">
+            <select name="mySelect2" multiple>
+              <option>項目1</option>
+              <option>項目2</option>
+            </select><br>
+            年齢 : <input type="text" name="myAge" value="75"><br>
+            <input type="button" value="タイプを調べる" onclick="check(this.form)">
           </form>
         </div>
       </div>

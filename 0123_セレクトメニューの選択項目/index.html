@@ -11,13 +11,16 @@
           <h1 class="title" id="js-title"></h1>
         </header>
         <ul class="index">
-          <li class="index-list">target:ターゲット</li>
+          <li class="index-list">text:選択項目</li>
         </ul>
-        <div class="sample-box">
-          <form method="get" action="./send.cgi" target="newWin">
-            <input type="text" name="precure"><br>
-            <input type="submit" name="送信"><br>
-            <input type="button" value="チェック" onclick="check(this.form)">
+        <div name="sample-box">
+          <form name="myForm">
+            <select name="mySelect">
+              <option>項目1</option>
+              <option>項目2</option>
+              <option>項目3</option>
+            </select>
+            <input type="button" value="項目文字を表示" onclick="check()">
           </form>
         </div>
       </div>

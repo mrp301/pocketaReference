@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../css/style-section2.css">
+  </head>
+  <body>
+    <div class="contents-box">
+      <div class="content-inside">
+        <header>
+          <h1 class="title" id="js-title"></h1>
+        </header>
+        <ul class="index">
+          <li class="index-list">defaultChecked:チェックボックス/ラジオボタンの初期状態</li>
+          <li class="index-list">defaultSelected:セレクトメニューの初期状態</li>
+          <li class="index-list">defaultValue:テキストエリアの初期状態</li>
+        </ul>
+        <div class="sample-box">
+          <form>
+            <input type="checkbox" name="CB">
+            <input type="radio" name="RD" checked>
+            <select name="SEL">
+              <option value="項目1">項目1
+            </select>
+            <textarea name="TE">hoge</textarea>
+            <hr>
+            <input type="button" value="チェック" onclick="check(this.form)">
+          </form>
+          <div id="result"></div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/file-name.js"></script>
+    <script src="index.js"></script>
+    <footer class="footer">
+      <small>©︎ 2017 hishinuma</small>
+    </footer>
+  </body>
+</html>

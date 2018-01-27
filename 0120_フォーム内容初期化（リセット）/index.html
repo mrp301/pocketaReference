@@ -11,19 +11,13 @@
           <h1 class="title" id="js-title"></h1>
         </header>
         <ul class="index">
-          <li class="index-list">list:データリスト</li>
+          <li class="index-list">reset:初期化（リセット）</li>
         </ul>
         <div class="sample-box">
           <form>
-            <input type="seach" id="pc" name="pc" list="retropc">
-            <datalist id="retropc">
-              <option value="MZ">mz-700</option>
-              <option value="PC">pc-6001</option>
-              <option value="FZ">FM-7</option>
-            </datalist>
-            <input type="button" value="チェック" onclick="check()">
+            <input type="text" value="いええええ"><br>
+            <input type="button" value="内容リセット" onclick="this.form.reset()">
           </form>
-          <div id="result"></div>
         </div>
       </div>
     </div>

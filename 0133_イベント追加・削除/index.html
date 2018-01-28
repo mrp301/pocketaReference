@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../css/style-section2.css">
+  </head>
+  <body>
+    <div class="contents-box">
+      <div class="content-inside">
+        <header>
+          <h1 class="title" id="js-title"></h1>
+        </header>
+        <ul class="index">
+          <li class="index-list">addEventListener:イベント追加</li>
+          <li class="index-list">attachEvent:イベント追加</li>
+          <li class="index-list">removeEventListener:イベント削除</li>
+          <li class="index-list">deleteEvent:イベント削除</li>
+        </ul>
+        <div class="sample-box">
+          <form>
+            <input type="button" value="画像にイベントを追加" onclick="addEvent()">
+            <input type="button" value="画像にイベントを削除" onclick="rmEvent()">
+          </form>
+          <div><img src="cat.jpg" id="photo"></div>
+          <div id="result"></div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/file-name.js"></script>
+    <script src="index.js"></script>
+    <footer class="footer">
+      <small>©︎ 2017 hishinuma</small>
+    </footer>
+  </body>
+</html>

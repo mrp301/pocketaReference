@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../css/style-section2.css">
+  </head>
+  <body>
+    <div class="contents-box">
+      <div class="content-inside">
+        <header>
+          <h1 class="title" id="js-title"></h1>
+        </header>
+        <ul class="index">
+          <li class="index-list">drag:ドラッグ時</li>
+          <li class="index-list">dragstar:ドラッグ開始時</li>
+          <li class="index-list">dragend:ドラッグ終了時</li>
+          <li class="index-list">dragenter:ドラッグ可能オブジェクトに重なった時</li>
+          <li class="index-list">dragover:ドラッグ可能オブジェクトを通過する時</li>
+          <li class="index-list">dragleave:ドラッグ可能オブジェクトから外れた時</li>
+          <li class="index-list">drop:ドロップされた時</li>
+        </ul>
+        <div class="sample-box">
+          <form name="dragForm">
+            ドラッグ元 : <input type="text" size="20" value="Sample"
+            onDrag = "dragCheck('Drag中...',3)"
+            ondragStart = "dragCheck('Drag開始',1)"
+            ondragEnd = "dragCheck('Drag終了',1);dragCheck('',3)"
+            ondragEnter="dragCheck('DragEnter...',1)"
+            ondragLeave=""="dragCheck('DragLeavr...',1)"
+            ondragOver="dragCheck('DragOver...',2)"><br>
+            ドラッグ先 : <input type="text" size="20" id="dp" onDrag="dragCheck('Drop,3')"><br>
+            状態1 : <input type="text" size="20" name="dStatus1"><br>
+            状態2 : <input type="text" size="20" name="dStatus2"><br>
+            状態3 : <input type="text" size="20" name="dStatus3"><br>
+          </form>
+          <div id="result"></div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/file-name.js"></script>
+    <script src="index.js"></script>
+    <footer class="footer">
+      <small>©︎ 2017 hishinuma</small>
+    </footer>
+  </body>
+</html>

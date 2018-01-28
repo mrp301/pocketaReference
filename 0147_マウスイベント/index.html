@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../css/style-section2.css">
+  </head>
+  <body>
+    <div class="contents-box">
+      <div class="content-inside">
+        <header>
+          <h1 class="title" id="js-title"></h1>
+        </header>
+        <ul class="index">
+          <li class="index-list">mouseover:マウスが重なった時</li>
+          <li class="index-list">mouseout:マウスが外れた時</li>
+          <li class="index-list">mouseenter:マウスが重なった時</li>
+          <li class="index-list">mouseleave:マウスが外れた時</li>
+          <li class="index-list">mousemove:マウス移動時</li>
+        </ul>
+        <div class="sample-box">
+          <div>
+            <a href="#" onmouseover = "msg('MouseOver')" onmouseout = "msg('MouseOut')">
+              マウスポインタを乗せて(over,out)
+            </a>
+          </div>
+          <div>
+            <a href="#" onmouseenter = "msg('MouseEnter')" onmouseleave = "msg('MouseLeave')">
+              マウスポインタを乗せて(enter,leave)
+            </a>
+          </div>
+          <form name="myForm">
+            <input type="text" size="20" name="msStatus"><br>
+            X : <input type="text" size="6" name="msX"><br>
+            Y : <input type="text" size="6" name="msY"><br>
+          </form>
+        </div>
+        <div id="result"></div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/file-name.js"></script>
+    <script src="index.js"></script>
+    <footer class="footer">
+      <small>©︎ 2017 hishinuma</small>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../css/style-section2.css">
+  </head>
+  <body>
+    <div class="contents-box">
+      <div class="content-inside">
+        <header>
+          <h1 class="title" id="js-title"></h1>
+        </header>
+        <ul class="index">
+          <li class="index-list">storage:データ書き込み時</li>
+          <li class="index-list">key:変更された内容のキー名</li>
+          <li class="index-list">oldValue:変更前の内容・値</li>
+          <li class="index-list">oldValue:変更後の内容・値</li>
+          <li class="index-list">url:イベント発生元のURL</li>
+          <li class="index-list">storageAera:変更されたストレージ</li>
+        </ul>
+        <div class="sample-box">
+          <p>ストレージイベント</p>
+          <form action="./index.html" method="get">
+            <textarea id="myText" cols="16" rows="5">サンプル</textarea>
+            <input type="button" id="saveData" value="入力内容を保存">
+          </form>
+        </div>
+        <div id="result"></div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/file-name.js"></script>
+    <script src="index.js"></script>
+    <footer class="footer">
+      <small>©︎ 2017 hishinuma</small>
+    </footer>
+  </body>
+</html>

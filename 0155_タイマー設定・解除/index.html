@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../css/style-section2.css">
+  </head>
+  <body>
+    <div class="contents-box">
+      <div class="content-inside">
+        <header>
+          <h1 class="title" id="js-title"></h1>
+        </header>
+        <ul class="index">
+          <li class="index-list">clearInterval:タイマー解除</li>
+          <li class="index-list">clearTimeout:タイマー解除</li>
+          <li class="index-list">setInterval:タイマー設定</li>
+          <li class="index-list">setTimeout:タイマー設定</li>
+        </ul>
+        <div class="sample-box">
+          <div>
+            <span id="time1">--</span>秒(Intrtval timer)
+          </div>
+          <div>
+            <span id="time2">--</span>秒
+          </div>
+          <form>
+            <input type="button" value="タイマー開始" onclik="startTimer()">
+            <input type="button" value="タイマー停止" onclik="stopTimer()">
+          </form>
+        </div>
+        <div id="result"></div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/file-name.js"></script>
+    <script src="index.js"></script>
+    <footer class="footer">
+      <small>©︎ 2017 hishinuma</small>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../css/style-section2.css">
+  </head>
+  <body>
+    <div class="contents-box">
+      <div class="content-inside">
+        <header>
+          <h1 class="title" id="js-title"></h1>
+        </header>
+        <ul class="index">
+          <li class="index-list">click:クリック時</li>
+          <li class="index-list">dblclick:ダブルクリック時</li>
+          <li class="index-list">mousedown:マウスダウン時</li>
+          <li class="index-list">mouseup:マウスアップ時</li>
+        </ul>
+        <div class="sample-box">
+          <p>
+            <a href="#" onclick="msg('クリック')">
+              押してください(click)
+            </a>
+          </p>
+          <div ondblclick="msg('ダブルクリック')">
+            押してください(dbclick)
+          </div>
+          <div onmousedown="msg('マウスダウン')" onmouseup="msg('マウスアップ')">
+            押してください(mousedown,mouseup)
+          </div>
+          <div id="result"></div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/file-name.js"></script>
+    <script src="index.js"></script>
+    <footer class="footer">
+      <small>©︎ 2017 hishinuma</small>
+    </footer>
+  </body>
+</html>
